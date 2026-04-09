@@ -1,7 +1,7 @@
 import { useEffect, useState, type ChangeEvent, type SyntheticEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import type Usuario from "../../models/Usuario";
-import { cadastrarUsuario } from "../../services/service";
+import { cadastrarUsuario } from "../../services/Service";
 import { ClipLoader } from "react-spinners";
 
 function Cadastro() {
@@ -76,8 +76,7 @@ function Cadastro() {
     navigate("/");
   }
 
-  console.log(JSON.stringify(usuario));
-  console.log(confirmarSenha)
+  
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold">

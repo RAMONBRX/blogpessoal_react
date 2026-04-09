@@ -41,7 +41,7 @@ function Login() {
     handleLogin(usuarioLogin);
   }
 
-  console.log(JSON.stringify(usuarioLogin));
+ console.log(JSON.stringify(usuarioLogin));
 
   return (
     <>
