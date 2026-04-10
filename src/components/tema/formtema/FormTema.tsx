@@ -6,11 +6,13 @@ import {
   type SyntheticEvent,
 } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import type Tema from "../../models/Tema";
-import { AuthContext } from "../../contexts/AuthContext";
-import { atualizar, buscar, cadastrar } from "../../services/Service";
+
 import { ClipLoader } from "react-spinners";
-import { ToastAlerta } from "../../utils/ToastAlerta";
+import { AuthContext } from "../../../contexts/AuthContext";
+import type Tema from "../../../models/Tema";
+import { buscar, atualizar, cadastrar } from "../../../services/Service";
+import { ToastAlerta } from "../../../utils/ToastAlerta";
+
 
 function FormTema() {
   // Objeto responsável por redirecionar o usuario para uma outra rota

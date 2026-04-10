@@ -1,10 +1,10 @@
 import { useState, useContext, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { AuthContext } from "../../contexts/AuthContext";
-import type Tema from "../../models/Tema";
-import { buscar, deletar } from "../../services/Service";
+import { AuthContext } from "../../../contexts/AuthContext";
+import type Tema from "../../../models/Tema";
 import { ClipLoader } from "react-spinners";
-import { ToastAlerta } from "../../utils/ToastAlerta";
+import { ToastAlerta } from "../../../utils/ToastAlerta";
+import { buscar, deletar } from "../../../services/Service";
 
 function DeletarTema() {
   const navigate = useNavigate();
