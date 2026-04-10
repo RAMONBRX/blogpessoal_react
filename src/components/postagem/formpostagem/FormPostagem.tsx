@@ -9,7 +9,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthContext.tsx";
 import type Postagem from "../../../models/Postagem.ts";
 import type Tema from "../../../models/Tema.ts";
-import { buscar, atualizar, cadastrar } from "../../../services/Service.ts";
+import { buscar, atualizar, cadastrar } from "../../../services/service.ts";
 import { ClipLoader } from "react-spinners";
 import { ToastAlerta } from "../../../utils/ToastAlerta.ts";
 

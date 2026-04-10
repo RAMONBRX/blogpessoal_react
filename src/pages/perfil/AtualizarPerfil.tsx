@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { ClipLoader } from "react-spinners"
 import { AuthContext } from "../../contexts/AuthContext"
 import type Usuario from "../../models/Usuario"
-import { atualizar, buscar } from "../../services/Service"
+import { atualizar, buscar } from "../../services/service"
 import { ToastAlerta } from "../../utils/ToastAlerta"
  
  

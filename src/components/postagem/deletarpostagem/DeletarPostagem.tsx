@@ -2,7 +2,7 @@ import { useState, useContext, useEffect } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { AuthContext } from "../../../contexts/AuthContext.tsx"
 import type Postagem from "../../../models/Postagem.ts"
-import { buscar, deletar } from "../../../services/Service.ts"
+import { buscar, deletar } from "../../../services/service.ts"
 import { ClipLoader } from "react-spinners"
 import { ToastAlerta } from "../../../utils/ToastAlerta.ts"
 

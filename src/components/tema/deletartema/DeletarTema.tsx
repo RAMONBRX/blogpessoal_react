@@ -4,7 +4,7 @@ import { AuthContext } from "../../../contexts/AuthContext.tsx";
 import type Tema from "../../../models/Tema.ts";
 import { ClipLoader } from "react-spinners";
 import { ToastAlerta } from "../../../utils/ToastAlerta.ts";
-import { buscar, deletar } from "../../../services/Service.ts";
+import { buscar, deletar } from "../../../services/service.ts";
 
 function DeletarTema() {
   const navigate = useNavigate();

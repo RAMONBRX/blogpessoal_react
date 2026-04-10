@@ -3,7 +3,7 @@ import CardTema from "../cardtema/CardTema.tsx";
 import { useContext, useEffect, useState } from "react";
 import type Tema from "../../../models/Tema.ts";
 import { AuthContext } from "../../../contexts/AuthContext.tsx";
-import { buscar } from "../../../services/Service.ts";
+import { buscar } from "../../../services/service.ts";
 import { SyncLoader } from "react-spinners";
 import { ToastAlerta } from "../../../utils/ToastAlerta.ts";
 

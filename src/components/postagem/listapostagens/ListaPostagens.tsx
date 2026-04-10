@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { SyncLoader } from "react-spinners";
 import { AuthContext } from "../../../contexts/AuthContext.tsx";
 import type Postagem from "../../../models/Postagem.ts";
-import { buscar } from "../../../services/Service.ts";
+import { buscar } from "../../../services/service.ts";
 import CardPostagem from "../cardpostagem/CardPostagem.tsx";
 import { ToastAlerta } from "../../../utils/ToastAlerta.ts";
 

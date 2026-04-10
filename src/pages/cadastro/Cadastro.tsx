@@ -1,7 +1,7 @@
 import { useEffect, useState, type ChangeEvent, type SyntheticEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import type Usuario from "../../models/Usuario";
-import { cadastrarUsuario } from "../../services/Service";
+import { cadastrarUsuario } from "../../services/service";
 import { ClipLoader } from "react-spinners";
 import { ToastAlerta } from "../../utils/ToastAlerta";
 
