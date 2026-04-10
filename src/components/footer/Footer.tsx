@@ -1,6 +1,6 @@
 import { GithubLogoIcon,  LinkedinLogoIcon } from "@phosphor-icons/react";
 import { useContext, type ReactNode } from "react";
-import { AuthContext } from "../../contexts/AuthContext";
+import { AuthContext } from "../../contexts/AuthContext.tsx";
 
 
 function Footer() {

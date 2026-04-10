@@ -6,12 +6,11 @@ import {
   type SyntheticEvent,
 } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-
 import { ClipLoader } from "react-spinners";
-import { AuthContext } from "../../../contexts/AuthContext";
-import type Tema from "../../../models/Tema";
-import { buscar, atualizar, cadastrar } from "../../../services/Service";
-import { ToastAlerta } from "../../../utils/ToastAlerta";
+import { AuthContext } from "../../../contexts/AuthContext.tsx";
+import type Tema from "../../../models/Tema.ts";
+import { buscar, atualizar, cadastrar } from "../../../services/Service.ts";
+import { ToastAlerta } from "../../../utils/ToastAlerta.ts";
 
 
 function FormTema() {

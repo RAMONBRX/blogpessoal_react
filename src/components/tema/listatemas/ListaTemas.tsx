@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import CardTema from "../cardtema/CardTema";
+import CardTema from "../cardtema/CardTema.tsx";
 import { useContext, useEffect, useState } from "react";
-import type Tema from "../../../models/Tema";
-import { AuthContext } from "../../../contexts/AuthContext";
-import { buscar } from "../../../services/Service";
+import type Tema from "../../../models/Tema.ts";
+import { AuthContext } from "../../../contexts/AuthContext.tsx";
+import { buscar } from "../../../services/Service.ts";
 import { SyncLoader } from "react-spinners";
-import { ToastAlerta } from "../../../utils/ToastAlerta";
+import { ToastAlerta } from "../../../utils/ToastAlerta.ts";
 
 function ListaTemas() {
   // Objeto responsável por redirecionar o usuario para uma outra rota

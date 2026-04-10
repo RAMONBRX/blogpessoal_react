@@ -6,12 +6,12 @@ import {
   type SyntheticEvent,
 } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { AuthContext } from "../../../contexts/AuthContext";
-import type Postagem from "../../../models/Postagem";
-import type Tema from "../../../models/Tema";
-import { buscar, atualizar, cadastrar } from "../../../services/Service";
+import { AuthContext } from "../../../contexts/AuthContext.tsx";
+import type Postagem from "../../../models/Postagem.ts";
+import type Tema from "../../../models/Tema.ts";
+import { buscar, atualizar, cadastrar } from "../../../services/Service.ts";
 import { ClipLoader } from "react-spinners";
-import { ToastAlerta } from "../../../utils/ToastAlerta";
+import { ToastAlerta } from "../../../utils/ToastAlerta.ts";
 
 function FormPostagem() {
   const navigate = useNavigate();
@@ -141,7 +141,7 @@ function FormPostagem() {
   }
 
   const carregandoTema = tema.descricao === "";
-  
+
   return (
     <div className="container flex flex-col mx-auto items-center">
       <h1 className="text-4xl text-center my-8">

@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../contexts/AuthContext";
+import { AuthContext } from "../../contexts/AuthContext.tsx";
 import { useContext, type ReactNode } from "react";
-import { ToastAlerta } from "../../utils/ToastAlerta";
+import { ToastAlerta } from "../../utils/ToastAlerta.ts";
 
 function Navbar() {
 

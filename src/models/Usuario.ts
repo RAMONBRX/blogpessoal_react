@@ -1,4 +1,4 @@
-import type Postagem from "./Postagem";
+import type Postagem from "./Postagem.ts";
 
 export default interface Usuario {
   id: number;

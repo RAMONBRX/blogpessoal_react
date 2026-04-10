@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import type Postagem from '../../../models/Postagem'
+import type Postagem from '../../../models/Postagem.ts'
 
 interface CardPostagensProps {
     postagem: Postagem

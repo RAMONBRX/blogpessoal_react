@@ -1,8 +1,7 @@
 import { createContext, useState, type ReactNode } from "react";
-
-import  type UsuarioLogin  from "../models/UsuarioLogin";
-import { login } from "../services/Service"
-import { ToastAlerta } from "../utils/ToastAlerta";
+import  type UsuarioLogin  from "../models/UsuarioLogin.ts";
+import { login } from "../services/Service.ts"
+import { ToastAlerta } from "../utils/ToastAlerta.ts";
 
 interface authContextProps {
   usuario: UsuarioLogin;
