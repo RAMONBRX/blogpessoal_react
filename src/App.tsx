@@ -6,7 +6,6 @@ import Cadastro from "./pages/cadastro/Cadastro";
 import Login from "./pages/login/Login";
 import { AuthProvider } from "./contexts/AuthContext";
 import ListaTemas from "./components/tema/listatemas/ListaTemas";
-
 import DeletarTema from "./components/tema/deletartema/DeletarTema";
 import ListaPostagens from "./components/postagem/listapostagens/ListaPostagens";
 import FormPostagem from "./components/postagem/formpostagem/FormPostagem";

@@ -141,6 +141,7 @@ function FormPostagem() {
   }
 
   const carregandoTema = tema.descricao === "";
+  
   return (
     <div className="container flex flex-col mx-auto items-center">
       <h1 className="text-4xl text-center my-8">
