@@ -1,20 +1,20 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Footer from "./components/footer/Footer";
-import Navbar from "./components/navbar/Navbar";
-import Home from "./pages/home/Home";
-import Cadastro from "./pages/cadastro/Cadastro";
-import Login from "./pages/login/Login";
-import { AuthProvider } from "./contexts/AuthContext";
-import ListaTemas from "./components/tema/listatemas/ListaTemas";
-import DeletarTema from "./components/tema/deletartema/DeletarTema";
-import ListaPostagens from "./components/postagem/listapostagens/ListaPostagens";
-import FormPostagem from "./components/postagem/formpostagem/FormPostagem";
-import DeletarPostagem from "./components/postagem/deletarpostagem/DeletarPostagem";
-import Perfil from "./pages/perfil/Perfil";
-import AtualizarPerfil from "./pages/perfil/AtualizarPerfil";
+import Footer from "./components/footer/Footer.tsx";
+import Navbar from "./components/navbar/Navbar.tsx";
+import Home from "./pages/home/Home.tsx";
+import Cadastro from "./pages/cadastro/Cadastro.tsx";
+import Login from "./pages/login/Login.tsx";
+import { AuthProvider } from "./contexts/AuthContext.tsx";
+import ListaTemas from "./components/tema/listatemas/ListaTemas.tsx";
+import DeletarTema from "./components/tema/deletartema/DeletarTema.tsx";
+import ListaPostagens from "./components/postagem/listapostagens/ListaPostagens.tsx";
+import FormPostagem from "./components/postagem/formpostagem/FormPostagem.tsx";
+import DeletarPostagem from "./components/postagem/deletarpostagem/DeletarPostagem.tsx";
+import Perfil from "./pages/perfil/Perfil.tsx";
+import AtualizarPerfil from "./pages/perfil/AtualizarPerfil.tsx";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
-import FormTema from "./components/tema/formtema/FormTema";
+import FormTema from "./components/tema/formtema/FormTema.tsx";
  
 
 
