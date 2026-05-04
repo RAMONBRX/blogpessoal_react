@@ -1,73 +1,113 @@
-# React + TypeScript + Vite
+# Blog Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web moderna e interativa para gerenciar um blog pessoal com sistema de autenticação, gerenciamento de postagens e temas.
 
-Currently, two official plugins are available:
+## 🌐 Acesso ao Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A aplicação está deployed e disponível em: 
+**[https://blogpessoal-react-g00x4sy0c-ramonbrxs-projects.vercel.app/](https://blogpessoal-react-g00x4sy0c-ramonbrxs-projects.vercel.app/)**
 
-## React Compiler
+## 🚀 Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Autenticação de Usuários**: Sistema de login e cadastro seguro
+- **Perfil de Usuário**: Visualizar e atualizar informações do perfil
+- **Gerenciamento de Postagens**: Criar, editar, visualizar e deletar postagens
+- **Gerenciamento de Temas**: Categorizar postagens com temas personalizados
+- **Interface Responsiva**: Design moderno e adaptável a diferentes dispositivos
+- **Navegação Intuitiva**: Menu de navegação e rodapé presentes em todas as páginas
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** - Biblioteca JavaScript para construção de interfaces
+- **TypeScript** - Superset JavaScript com tipagem estática
+- **Vite** - Build tool rápido e moderno
+- **React Router** - Roteamento de páginas
+- **Tailwind CSS** - Framework CSS utilitário
+- **React Toastify** - Notificações de usuário
+- **Context API** - Gerenciamento de estado global (Autenticação)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Estrutura do Projeto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/        # Componentes reutilizáveis
+│   ├── footer/       # Rodapé
+│   ├── navbar/       # Barra de navegação
+│   ├── postagem/     # Componentes de postagens
+│   │   ├── cardpostagem/
+│   │   ├── deletarpostagem/
+│   │   ├── formpostagem/
+│   │   ├── listapostagens/
+│   │   └── modalpostagem/
+│   └── tema/         # Componentes de temas
+│       ├── cardtema/
+│       ├── deletartema/
+│       ├── formtema/
+│       └── listatemas/
+├── contexts/         # Context API para estado global
+├── models/           # Interfaces e tipos TypeScript
+├── pages/            # Páginas da aplicação
+│   ├── cadastro/
+│   ├── home/
+│   ├── login/
+│   └── perfil/
+├── services/         # Chamadas à API
+└── utils/            # Utilitários
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Como Executar
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Pré-requisitos
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js (v14 ou superior)
+- npm ou yarn
+
+### Instalação
+
+```bash
+# Clone o repositório
+git clone <url-do-repositório>
+
+# Acesse o diretório
+cd blogpessoal
+
+# Instale as dependências
+npm install
 ```
+
+### Desenvolvimento
+
+```bash
+# Inicie o servidor de desenvolvimento
+npm run dev
+```
+
+A aplicação estará disponível em `http://localhost:5173`
+
+### Build para Produção
+
+```bash
+# Crie a build otimizada
+npm run build
+
+# Pré-visualize a build
+npm run preview
+```
+
+## 📝 Páginas Principais
+
+- **Login** (`/`) - Página inicial com formulário de login
+- **Cadastro** (`/cadastro`) - Registro de novos usuários
+- **Home** (`/home`) - Página principal com postagens
+- **Temas** (`/temas`) - Gerenciamento de temas
+- **Postagens** (`/postagens`) - Gerenciamento de postagens
+- **Perfil** (`/perfil`) - Visualizar perfil do usuário
+- **Atualizar Perfil** (`/atualizarusuario`) - Editar informações do perfil
+
+## 🔐 Autenticação
+
+O projeto utiliza Context API para gerenciar o estado de autenticação globalmente. O token do usuário é armazenado e utilizado para fazer requisições autenticadas à API.
+
+## 📦 Dependências Principais
+
+Veja o arquivo `package.json` para a lista completa de dependências.
